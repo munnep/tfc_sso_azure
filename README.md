@@ -1,17 +1,20 @@
-# tfc_sso_azure
+# Terraform Cloud Single Sign-on with Microsoft Azure AD
 
 This repository describes a step-by-step on how to configure Single sign-on with Microsoft Azure AD for Terraform Cloud.
 
 At the end of the steps you should be able to login to Terraform Cloud using SAML using Microsoft Azure AD
 
-Based on this documentation:
+Steps involved
+- In Azure use Active Directory to create a new application
+- Configure SAML for this application
+- In Terraform Cloud configure the Single Sign-On
+
+This repository is based on the official HashiCorp documentation:  
 [Single Sign-on: Microsoft Azure AD](https://www.terraform.io/cloud-docs/users-teams-organizations/single-sign-on/azure-ad)
-
-
 
 # Prerequisites
 
-- Access Azure
+- Access to Azure Portal
 - Access to Terraform Cloud
  
 # How to
@@ -80,6 +83,6 @@ https://app.terraform.io/session
 
 ## Test the SSO
 
-- Before enabling SSO you would get this message   
+- Before enabling SSO you would get this message when trying to login to Terraform Cloud using SSO
 ![](media/2022-03-24-16-36-08.png)  
 - After you enable SSO you can login 
